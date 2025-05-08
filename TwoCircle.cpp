@@ -170,7 +170,7 @@ void drawBresenhamCircle(HDC hdc, int xc, int yc, int r, COLORREF REF) {
 
 void DrawTwoCircle(HDC hdc) {
     if (Points.size() < 3) return;
-	sort(Points.begin(),Points.end());
+	//sort(Points.begin(),Points.end()); I cant because point not implement i comparer
 
     int x1 = Points[0].x, y1 = Points[0].y;
     int x2 = Points[1].x, y2 = Points[1].y;
